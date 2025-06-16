@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="analysis-results">
+    <h2>{{ category|title }} Analysis</h2>
+    
+    {% if message %}
+        <div class="message">{{ message }}</div>
+    {% else %}
+        <div class="chart-container">
+            <h3>{{ data.description }} ({{ data.units }})</h3>
+            <img src="data:image/png;base64,{{ chart_image }}" alt="Historical Trends">
+        </div>
+        
+        <div class="data-table">
+            <h3>Historical Data</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in data.data %}
+                    <tr>
+                        <td>{{ item.year }}</td>
+                        <td>{{ item.value }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="ai-analysis">
+            <h3>AI Analysis</h3>
+            <div class="analysis-text">
+                {{ analysis|safe }}
+            </div>
+        </div>
+    {% endif %}
+    
+    <div class="actions">
+        <a href="{{ url_for('collect') }}?category={{ category }}" class="btn">Collect More Data</a>
+        <a href="{{ url_for('index') }}" class="btn">Choose Another Category</a>
+    </div>
+</section>
+{% endblock %}

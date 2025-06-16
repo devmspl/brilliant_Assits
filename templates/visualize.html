@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="visualization">
+    {% if message %}
+        <div class="message">{{ message }}</div>
+    {% else %}
+        <h2>Visualizing: {{ chart_data.category }}</h2>
+        
+        <div class="chart-container">
+            <canvas id="dataChart"></canvas>
+        </div>
+        
+        <div class="stats-container">
+            <h3>Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">{{ stats.total }}</span>
+                    <span class="stat-label">Total Entries</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{ stats.average }}</span>
+                    <span class="stat-label">Average Value</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{ stats.min }}</span>
+                    <span class="stat-label">Minimum</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">{{ stats.max }}</span>
+                    <span class="stat-label">Maximum</span>
+                </div>
+            </div>
+            <p class="update-time">Last updated: {{ stats.last_updated }}</p>
+        </div>
+        
+        <div class="data-table">
+            <h3>Raw Data</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data %}
+                    <tr>
+                        <td>{{ row.name }}</td>
+                        <td>{{ row.value }}</td>
+                        <td>{{ row.timestamp }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        {% if not message %}
+        const ctx = document.getElementById('dataChart');
+        const chartData = {
+            labels: {{ chart_data['labels'] | tojson }},
+            datasets: [{
+                label: '{{ chart_data.category }}',
+                data: {{ chart_data['values'] | tojson }},
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        };
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: chartData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: '{{ chart_data.category }} Data Visualization'
+                    }
+                }
+            }
+        });
+        {% endif %}
+    });
+</script>
+
+{% endblock %}

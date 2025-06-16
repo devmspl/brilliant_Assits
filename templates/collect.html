@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="collect-form">
+    <h2>Collect {{ category|title if category else 'New' }} Data</h2>
+    
+    {% if error %}
+    <div class="error-message">{{ error }}</div>
+    {% endif %}
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="category">Select Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select a category --</option>
+                {% for cat, desc in categories.items() %}
+                <option value="{{ cat }}" {% if category==cat %}selected{% endif %}>{{ cat|title }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="years">Years of Historical Data:</label>
+            <select id="years" name="years">
+                <option value="3">3 Years</option>
+                <option value="5" selected>5 Years</option>
+                <option value="10">10 Years</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="submit-button">Collect & Analyze Data</button>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,79 @@
+category,value,notes,timestamp,name,year,description,units
+customers,100.0,,2025-06-10 15:40:33.889009,,,,
+vehicle,120000.0,,2025-06-10 16:01:54,Mileage,,,
+vehicle,2018.0,,2025-06-10 16:01:54,Year,,,
+vehicle,2.0,,2025-06-10 16:01:54,Engine Size,,,
+vehicle,150.0,,2025-06-10 16:01:54,Horsepower,,,
+vehicle,15000.0,,2025-06-10 16:01:54,Price,,,
+vehicle,120000.0,,2025-06-10 16:07:30,Mileage,,,
+vehicle,2018.0,,2025-06-10 16:07:30,Year,,,
+vehicle,2.0,,2025-06-10 16:07:30,Engine Size,,,
+vehicle,150.0,,2025-06-10 16:07:30,Horsepower,,,
+vehicle,15000.0,,2025-06-10 16:07:30,Price,,,
+vehicle,12000.0,,2025-06-10 16:09:15,Miles Driven,,,
+vehicle,30.0,,2025-06-10 16:09:15,Fuel Efficiency,,,
+vehicle,250.0,,2025-06-10 16:09:15,Horsepower,,,
+vehicle,5.0,,2025-06-10 16:09:15,Passenger Capacity,,,
+vehicle,5.0,,2025-06-10 16:09:15,Age,,,
+vehicle,120000.0,,2025-06-10 16:11:57,Mileage,,,
+vehicle,2018.0,,2025-06-10 16:11:57,Year,,,
+vehicle,2.0,,2025-06-10 16:11:57,Engine Size,,,
+vehicle,150.0,,2025-06-10 16:11:57,Horsepower,,,
+vehicle,15000.0,,2025-06-10 16:11:57,Price,,,
+health,24.5,,2025-06-10 16:16:02,BMI,,,
+health,120.0,,2025-06-10 16:16:02,Blood Pressure (Systolic),,,
+health,80.0,,2025-06-10 16:16:02,Blood Pressure (Diastolic),,,
+health,72.0,,2025-06-10 16:16:02,Heart Rate,,,
+health,180.0,,2025-06-10 16:16:02,Cholesterol (Total),,,
+health,60.0,,2025-06-10 16:16:02,Cholesterol (HDL),,,
+health,100.0,,2025-06-10 16:16:02,Cholesterol (LDL),,,
+health,150.0,,2025-06-10 16:16:02,Triglycerides,,,
+health,90.0,,2025-06-10 16:16:02,Glucose (Fasting),,,
+health,25.0,,2025-06-10 16:16:02,Body Fat Percentage,,,
+health,40.0,,2025-06-10 16:16:02,Muscle Mass,,,
+health,2.0,,2025-06-10 16:16:02,Water Intake (Liters),,,
+health,7.0,,2025-06-10 16:16:02,Sleep Duration (Hours),,,
+health,10000.0,,2025-06-10 16:16:02,Daily Steps,,,
+health,3.0,,2025-06-10 16:16:02,Fruit Intake (Servings),,,
+health,5.0,,2025-06-10 16:16:02,Vegetable Intake (Servings),,,
+health,5.0,,2025-06-10 16:16:02,Stress Level (Scale 1-10),,,
+health,3.0,,2025-06-10 16:16:02,Exercise Frequency (Times per Week),,,
+health,30.0,,2025-06-10 16:16:02,Exercise Duration (Minutes),,,
+health,30.0,,2025-06-10 16:16:02,Vitamin D Levels (ng/mL),,,
+population,8.045,Estimate based on UN data,,,2023.0,Estimated global population in billions,billions
+population,8.023,Estimate based on UN data,,,2022.0,Estimated global population in billions,billions
+population,7.995,Estimate based on UN data,,,2021.0,Estimated global population in billions,billions
+software/it,580.5,Slight dip due to global economic uncertainty.,,,2023.0,Global software revenue (in billions of USD),Billions of USD
+software/it,595.2,Strong growth fueled by continued digital transformation.,,,2022.0,Global software revenue (in billions of USD),Billions of USD
+software/it,565.8,Pandemic-driven surge in demand for remote work solutions.,,,2021.0,Global software revenue (in billions of USD),Billions of USD
+software/it,520.1,"Initial impact of pandemic on some sectors, but overall growth.",,,2020.0,Global software revenue (in billions of USD),Billions of USD
+software/it,485.7,Steady growth driven by cloud computing and mobile technologies.,,,2019.0,Global software revenue (in billions of USD),Billions of USD
+software/it,580.2,Slight decrease due to global economic uncertainty,,,2023.0,Global Software Revenue (in billions of US dollars),Billions of USD
+software/it,595.8,Steady growth fueled by cloud computing adoption,,,2022.0,Global Software Revenue (in billions of US dollars),Billions of USD
+software/it,568.4,Strong growth driven by pandemic-related digital transformation,,,2021.0,Global Software Revenue (in billions of US dollars),Billions of USD
+software/it,512.7,"Initial impact of pandemic on some sectors, but overall growth remained positive",,,2020.0,Global Software Revenue (in billions of US dollars),Billions of USD
+software/it,485.3,Continued steady growth driven by rising digitalization,,,2019.0,Global Software Revenue (in billions of US dollars),Billions of USD
+financial,1.2,"Early stage, focused on product development",,,2018.0,Average annual revenue for a small technology startup,USD million
+financial,2.8,"First successful product launch, expanding customer base",,,2019.0,Average annual revenue for a small technology startup,USD million
+financial,5.1,"Strong growth during pandemic, increased demand for online services",,,2020.0,Average annual revenue for a small technology startup,USD million
+financial,7.5,"Continued expansion, adding new product lines and features",,,2021.0,Average annual revenue for a small technology startup,USD million
+financial,9.8,"Market saturation starting to impact growth, new strategies in place to maintain momentum",,,2022.0,Average annual revenue for a small technology startup,USD million
+software/it,5750.0,Strong growth driven by cloud adoption and digital transformation initiatives.,,,2023.0,Global Software Revenue (in billions of USD),Billions of USD
+software/it,5400.0,Continued growth despite global economic headwinds.,,,2022.0,Global Software Revenue (in billions of USD),Billions of USD
+software/it,5050.0,Rapid growth fueled by pandemic-driven digital acceleration.,,,2021.0,Global Software Revenue (in billions of USD),Billions of USD
+population,8.04,UN estimate,,,2023.0,Estimated global population by year,Billions
+population,8.02,UN estimate,,,2022.0,Estimated global population by year,Billions
+population,7.99,UN estimate,,,2021.0,Estimated global population by year,Billions
+population,7.97,UN estimate,,,2020.0,Estimated global population by year,Billions
+population,7.95,UN estimate,,,2019.0,Estimated global population by year,Billions
+software/it,570.5,Strong growth driven by continued cloud adoption and increased enterprise spending on digital transformation.,,,2023.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,545.8,"Slight slowdown in growth due to global economic uncertainty, but still a robust year for the software sector.",,,2022.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,502.3,"Record growth fueled by the pandemic, with businesses accelerating digitalization initiatives.",,,2021.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,600.0,Estimated based on industry reports and analyst predictions.,,,2023.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,560.5,Actual figures based on published reports.,,,2022.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,525.2,Actual figures based on published reports.,,,2021.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,495.8,Actual figures based on published reports. Growth impacted by the COVID-19 pandemic.,,,2020.0,Global software revenue (in billions of US dollars),Billions of USD
+software/it,468.1,Actual figures based on published reports.,,,2019.0,Global software revenue (in billions of US dollars),Billions of USD
+service provider,150.2,Strong year due to increased demand for cloud services and successful new client acquisition.,,,2023.0,Annual revenue for a hypothetical small-scale IT service provider.,USD (thousands)
+service provider,125.8,"Steady growth, reflecting consistent client base and successful project delivery.",,,2022.0,Annual revenue for a hypothetical small-scale IT service provider.,USD (thousands)
+service provider,105.5,"Slight dip due to the initial impact of the pandemic; however, online service offerings helped mitigate losses.",,,2021.0,Annual revenue for a hypothetical small-scale IT service provider.,USD (thousands)

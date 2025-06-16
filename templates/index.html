@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h2>Analyze Historical Data for Any Category</h2>
+    <p>Select a category to collect, visualize, and analyze historical data.</p>
+</section>
+
+<section class="category-selection">
+    <h3>Supported Categories</h3>
+    <div class="category-grid">
+        {% for category, description in categories.items() %}
+        <div class="category-card">
+            <h4>{{ category|title }}</h4>
+            <p>{{ description }}</p>
+            <a href="{{ url_for('collect') }}?category={{ category }}" class="btn">Analyze</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
